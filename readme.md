@@ -7,13 +7,19 @@ preview markdown file in browser
 build.sh will build the docker image for web server
 
 ```
-./build.sh
+sudo ./build.sh
 ```
 
 install.sh will install the bash script to /usr/local/bin
 
 ```
-./install.sh
+sudo ./install.sh
+```
+
+you can uninstall the bash script by uninstall.sh
+
+```
+sudo ./uninstall.sh
 ```
 
 ## usage
