@@ -1690,7 +1690,7 @@ text/csv					csv
 text/html					html htm
 text/javascript					js mjs
 # text/jcr-cnd
-# text/markdown
+text/markdown
 # text/mizar
 text/n3						n3
 # text/parameters
