@@ -1,5 +1,5 @@
 window.onload = function() {
-  setInterval(function() {
+  const id = setInterval(function() {
       var xhr = new XMLHttpRequest();
       xhr.open("GET", location.pathname);
       xhr.setRequestHeader("Pragma", "no-cache");
@@ -12,6 +12,9 @@ window.onload = function() {
           }
         }
       };
+      xhr.onerror = function() {
+        clearInterval(id);
+      }
       xhr.send();
   }, 1000);
 };
