@@ -7,4 +7,5 @@ pandoc \
   --metadata pagetitle="$REQUEST_URI" \
   -s \
   -t html5 \
-  -c res/github-markdown.css
+  --css res/github-markdown.css \
+  | sed '/<\/head>/i <script src="res/refresh.js"></script>'
