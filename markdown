@@ -12,4 +12,6 @@ do
     esac
 done
 
+echo "> markdown server http://localhost:$port"
+
 docker run -it --rm -p "$port":80 -v "$PWD":/usr/local/apache2/htdocs markdown:1.0.0
